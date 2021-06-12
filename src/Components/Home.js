@@ -21,7 +21,7 @@ const Home = props => {
              </div>
             <Container>
                 <Row className="home-row">
-                    <Col >
+                    <Col xs={12} lg={4}>
                         <img src={Image} alt="profile"  height="100px" width="100px" className="myProfile"/>
                         <h3>Our Services</h3>
                         <p>
@@ -32,7 +32,7 @@ const Home = props => {
                         <Button variant="outline-primary" size="lg">Learn more</Button>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} lg={4}>
                         <img src={Image} alt="profile"  height="100px" width="100px" className="myProfile"/>
                         <h3>Our Story</h3>
                         <p>
@@ -43,7 +43,7 @@ const Home = props => {
                         <Button variant="outline-primary" size="lg">Learn more</Button>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} lg={4}>
                         <img src={Image} alt="profile"  height="100px" width="100px" className="myProfile"/>
                         <h3>Our Practices</h3>
                         <p>
@@ -60,4 +60,4 @@ const Home = props => {
     )
 }
 
-export default Home
+export default Home;

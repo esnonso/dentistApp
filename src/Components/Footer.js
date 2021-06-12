@@ -1,5 +1,7 @@
 import React,{ Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 class Footer extends Component {
     render(){
@@ -25,8 +27,9 @@ class Footer extends Component {
                         <p>world@mkdentistry.com</p>
                     </Col>
                     <Col>
-                        <h1 className="tag">in</h1>
-                        <h1 className="tag">f</h1>
+                        <p><FontAwesomeIcon icon={faFacebook} size="3x"/> </p>
+                        <p><FontAwesomeIcon icon={faInstagram} size="3x"/></p> 
+                        <p><FontAwesomeIcon icon={faLinkedinIn} size="3x"/></p>
                     </Col>
                 </Row>
                 <p>&copy;2021 World Dentist Shop</p>
@@ -36,4 +39,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer
+export default Footer;
